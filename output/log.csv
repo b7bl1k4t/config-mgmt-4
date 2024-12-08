@@ -1,0 +1,43 @@
+﻿Line,Instruction,Opcode
+2,"LOAD_CONST R1, 1       # R1 = 1",1132
+3,"LOAD_CONST R2, 1       # R2 = 1 (адрес 1)",1196
+4,"STORE_MEM R2, R1       # Сохранить R1 в memory[1]",1154
+7,"LOAD_CONST R0, 100     # R0 = 100 (адрес вектора)",102444
+8,"LOAD_CONST R1, 10      # R1 = 10 (первый элемент)",10348
+9,"STORE_MEM R0, R1       # memory[100] = 10",1026
+11,"ADD R0, R0, 1          # R0 = R0 + memory[1] (увеличиваем адрес на 1)",16413
+12,"LOAD_CONST R1, 20",20588
+13,"STORE_MEM R0, R1       # memory[101] = 20",1026
+15,"ADD R0, R0, 1          # R0 = R0 + memory[1]",16413
+16,"LOAD_CONST R1, 30",30828
+17,"STORE_MEM R0, R1       # memory[102] = 30",1026
+19,"ADD R0, R0, 1          # R0 = R0 + memory[1]",16413
+20,"LOAD_CONST R1, 40",41068
+21,"STORE_MEM R0, R1       # memory[103] = 40",1026
+24,"LOAD_CONST R0, 100     # R0 = 100",102444
+27,"LOAD_CONST R1, 12      # R1 = 12",12396
+30,"LOAD_CONST R3, 200     # R3 = 200 (начальный адрес для результатов)",205036
+33,"LOAD_CONST R2, 0       # R2 = 0 (счетчик итераций)",172
+36,"LOAD_CONST R4, 4       # R4 = 4",4396
+39,"LOAD_CONST R5, 1       # R5 = 1",1388
+43,"LOAD_CONST R1, 12",12396
+44,"LOAD_CONST R2, 2",2220
+45,"STORE_MEM R2, R1",1154
+48,"LOAD_MEM R6, R0, 0     # R6 = memory[R0 + 0]",398
+49,"ADD R7, R6, 2         # R7 = R6 + 12",39389
+50,"STORE_MEM R3, R7       # memory[R3] = R7 (сохранение результата)",7362
+51,"ADD R0, R0, 1          # R0 = R0 + memory[1] (увеличиваем адрес исходного вектора)",16413
+52,"ADD R3, R3, 1          # R3 = R3 + memory[1] (увеличиваем адрес результата)",19677
+55,"LOAD_MEM R6, R0, 0",398
+56,"ADD R7, R6, 2",39389
+57,"STORE_MEM R3, R7",7362
+58,"ADD R0, R0, 1",16413
+59,"ADD R3, R3, 1",19677
+62,"LOAD_MEM R6, R0, 0",398
+63,"ADD R7, R6, 2",39389
+64,"STORE_MEM R3, R7",7362
+65,"ADD R0, R0, 1",16413
+66,"ADD R3, R3, 1",19677
+69,"LOAD_MEM R6, R0, 0",398
+70,"ADD R7, R6, 2",39389
+71,"STORE_MEM R3, R7",7362
